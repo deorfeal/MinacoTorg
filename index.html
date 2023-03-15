@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600&family=Play:wght@400;700&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="big-wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__top header-top">
+          <a class="logo" href="#">
+            <img class="logo-img" src="images/logo.png" alt="logo">
+            <img class="logo-img__mobile" src="images/logo-top-mobile.svg" alt="logo">
+          </a>
+          <nav class="menu">
+            <ul class="header-top__list">
+              <li class="header-top__list-item">
+                <a class="header-top__list-link header-top__list-link--active" href="#">Меню</a>
+              </li>
+              <li class="header-top__list-item">
+                <a class="header-top__list-link" href="#">Наши проекы</a>
+              </li>
+              <li class="header-top__list-item">
+                <a class="header-top__list-link" href="#">О проекте</a>
+              </li>
+              <li class="header-top__list-item">
+                <a class="header-top__list-link" href="#">Услуги</a>
+              </li>
+              <li class="header-top__list-item">
+                <a class="header-top__list-link" href="#">Сотрудники</a>
+              </li>
+              <li class="header-top__list-item">
+                <a class="header-top__list-link" href="#">Проекты</a>
+              </li>
+              <li class="header-top__list-item">
+                <a class="header-top__list-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user-nav">
+            <div class="user-nav__socials socials">
+              <a class="socials__link" href="#">
+                <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.368236 9.13986L5.19624 10.9088L7.07833 16.8589C7.16016 17.261 7.65114 17.3414 7.97846 17.1002L10.6789 14.9292C10.9243 14.6879 11.3335 14.6879 11.6608 14.9292L16.4888 18.3867C16.8161 18.6279 17.3071 18.4671 17.3889 18.065L20.9895 1.17956C21.0713 0.777525 20.6622 0.375493 20.253 0.536307L0.368236 8.09457C-0.122745 8.25538 -0.122745 8.97904 0.368236 9.13986ZM6.83285 10.0243L16.3251 4.31544C16.4888 4.23503 16.6525 4.47625 16.4888 4.55666L8.71493 11.7129C8.46944 11.9541 8.22394 12.2757 8.22394 12.6778L7.97846 14.6075C7.97846 14.8488 7.56931 14.9292 7.48748 14.6075L6.5055 11.0696C6.26001 10.6676 6.42369 10.1851 6.83285 10.0243Z" />
+                </svg>
+              </a>
+              <a class="socials__link" href="#">
+                <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.8049 11.2671C20.8049 11.1849 20.7214 11.1849 20.7214 11.1027C20.3872 10.4452 19.6352 9.62329 18.6325 8.71918C18.1312 8.30822 17.8805 7.97945 17.7134 7.81507C17.4628 7.4863 17.4628 7.23973 17.5463 6.91097C17.6299 6.66439 17.9641 6.25342 18.549 5.51369C18.8832 5.10274 19.0503 4.85617 19.301 4.60959C20.5543 2.96575 21.1391 1.89725 20.972 1.4041L20.8885 1.32192C20.8049 1.23973 20.7214 1.15754 20.5543 1.15754C20.3872 1.07535 20.1365 1.07535 19.8858 1.15754H16.7108C16.6272 1.15754 16.6272 1.15754 16.4601 1.15754C16.3766 1.15754 16.293 1.15754 16.293 1.15754H16.2095H16.1259L16.0424 1.23972C15.9588 1.32191 15.9588 1.32191 15.9588 1.4041C15.6246 2.30821 15.2068 3.04794 14.789 3.86986C14.5384 4.28082 14.2877 4.69178 14.0371 5.02055C13.7864 5.34932 13.6193 5.59589 13.4522 5.76027C13.2851 5.92466 13.118 6.00685 13.0344 6.17123C12.9509 6.25342 12.7838 6.33562 12.7838 6.25343C12.7002 6.25343 12.6166 6.25342 12.6166 6.17123C12.5331 6.08904 12.4495 6.00685 12.366 5.92465C12.2824 5.84246 12.2824 5.67808 12.1989 5.51369C12.1989 5.34931 12.1989 5.18493 12.1989 5.10274C12.1989 5.02054 12.1989 4.77398 12.1989 4.60959C12.1989 4.36302 12.1989 4.19863 12.1989 4.11644C12.1989 3.86986 12.1989 3.5411 12.1989 3.21233C12.1989 2.88357 12.1989 2.63698 12.1989 2.4726C12.1989 2.30822 12.1989 2.06164 12.1989 1.89726C12.1989 1.65068 12.1989 1.48629 12.1989 1.4041C12.1989 1.32191 12.1153 1.15753 12.1153 1.07534C12.0318 0.993148 11.9482 0.910954 11.8647 0.828762C11.7811 0.74657 11.614 0.746573 11.5304 0.664381C11.1127 0.582189 10.6114 0.5 10.0265 0.5C8.68962 0.5 7.77052 0.582194 7.43631 0.746578C7.2692 0.82877 7.10209 0.910957 7.01854 1.07534C6.85143 1.23972 6.85143 1.32192 6.93498 1.32192C7.35275 1.40411 7.68697 1.56849 7.85408 1.81506L7.93764 1.97946C8.02119 2.06165 8.02118 2.22602 8.10473 2.4726C8.18828 2.71917 8.18829 2.96575 8.18829 3.29452C8.18829 3.78767 8.18829 4.28082 8.18829 4.60959C8.18829 5.02055 8.10473 5.26712 8.10473 5.51369C8.10473 5.76027 8.02119 5.92466 7.93764 6.00685C7.85408 6.17123 7.85407 6.25343 7.77052 6.25343C7.77052 6.25343 7.77051 6.33561 7.68696 6.33561C7.60341 6.33561 7.51986 6.41781 7.35275 6.41781C7.2692 6.41781 7.10209 6.33562 7.01854 6.25343C6.85143 6.17124 6.68432 6.00685 6.60077 5.84247C6.43366 5.67809 6.26655 5.4315 6.09944 5.10274C5.93233 4.77397 5.68166 4.44521 5.51455 3.95205L5.34746 3.62329C5.26391 3.45891 5.0968 3.13014 4.92969 2.71918C4.76258 2.30822 4.59547 1.97946 4.42836 1.5685C4.34481 1.40411 4.26126 1.32191 4.17771 1.23972H4.09415C4.09415 1.23972 4.01059 1.15754 3.92703 1.15754C3.84348 1.15754 3.75994 1.07534 3.67638 1.07534H0.668434C0.334218 1.07534 0.167113 1.15753 0.083559 1.23972L0 1.32192C0 1.32192 0 1.40411 0 1.4863C0 1.56849 5.09848e-06 1.65068 0.083559 1.81506C0.501329 2.80136 1.00265 3.78767 1.50397 4.77397C2.0053 5.67808 2.50663 6.5 2.84084 7.07535C3.25861 7.65069 3.59282 8.22603 4.01059 8.71918C4.42836 9.21233 4.67902 9.5411 4.76257 9.70548C4.92968 9.86987 5.01323 9.95205 5.09678 10.0342L5.34746 10.2808C5.51457 10.4452 5.76522 10.6918 6.09944 10.9384C6.43366 11.1849 6.85142 11.4315 7.26919 11.6781C7.68696 11.9247 8.18829 12.0891 8.68962 12.2534C9.2745 12.4178 9.77581 12.5 10.2771 12.4178H11.5304C11.7811 12.4178 11.9482 12.3356 12.1153 12.1712L12.1989 12.089C12.1989 12.0068 12.2824 12.0069 12.2824 11.9247C12.2824 11.8425 12.2824 11.7603 12.2824 11.5959C12.2824 11.2671 12.2824 11.0206 12.366 10.774C12.4495 10.5274 12.4496 10.363 12.5331 10.1986C12.6167 10.0343 12.7002 9.95206 12.7838 9.86986C12.8673 9.78767 12.9509 9.70548 12.9509 9.70548H13.0344C13.2015 9.62329 13.4522 9.70548 13.6193 9.86986C13.87 10.0342 14.1206 10.2808 14.2877 10.5274C14.4548 10.774 14.7055 11.0206 15.0397 11.3493C15.3739 11.6781 15.6246 11.9247 15.7917 12.0069L16.0424 12.1712C16.2095 12.2534 16.3766 12.3356 16.6272 12.4178C16.8779 12.5 17.045 12.5 17.2121 12.5L20.053 12.4178C20.3036 12.4178 20.5543 12.3356 20.7214 12.2534C20.8885 12.1712 20.972 12.089 20.972 11.9247C20.972 11.8425 20.972 11.6781 20.972 11.5959C20.8049 11.4315 20.8049 11.3493 20.8049 11.2671Z" />
+                </svg>
+              </a>
+              <a class="socials__link" href="#">
+                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.4385 0H2.56154C1.10769 0 0 1.16923 0 2.70385V16.2962C0 17.8308 1.10769 19 2.56154 19H15.4385C16.8923 19 18 17.8308 18 16.2962V2.70385C18 1.16923 16.8923 0 15.4385 0ZM9 15.2C11.9769 15.2 14.4 12.7154 14.4 9.71923C14.4 9.20769 14.3308 8.62308 14.1923 8.18462H15.7154V15.9308C15.7154 16.2962 15.4385 16.6615 15.0231 16.6615H2.97693C2.63077 16.6615 2.28462 16.3692 2.28462 15.9308V8.11154H3.87693C3.73847 8.62308 3.66923 9.13462 3.66923 9.64615C3.6 12.7154 6.02308 15.2 9 15.2ZM9 13.0077C7.06154 13.0077 5.53846 11.4 5.53846 9.42692C5.53846 7.45385 7.06154 5.84615 9 5.84615C10.9385 5.84615 12.4615 7.45385 12.4615 9.42692C12.4615 11.4731 10.9385 13.0077 9 13.0077ZM15.6462 5.18846C15.6462 5.62692 15.3 5.99231 14.8846 5.99231H12.9462C12.5308 5.99231 12.1846 5.62692 12.1846 5.18846V3.21538C12.1846 2.77692 12.5308 2.41154 12.9462 2.41154H14.8846C15.3 2.41154 15.6462 2.77692 15.6462 3.21538V5.18846Z" />
+                </svg>
+              </a>
+            </div>
+            <div class="user-nav__box">
+              <p class="user-nav__box-text">Ежедневно с 9:00 до 21:00</p>
+              <a class="user-nav__box-phone" href="tel:+79288532323">+7 (928) 853-23-23</a>
+            </div>
+            <div class="user-nav__button">
+              <a class="user-nav__button-btn" href="#">Заказать звонок</a>
+            </div>
+          </div>
+          <button class="menu-btn" type="button"><span></span></button>
+        </div>
+        <div class="header__bottom header-bottom">
+          <div class="header-bottom__body">
+            <h1 class="header-bottom__body-title">Разработка програмного обеспечения и музыки любой сложности</h1>
+            <a class="header-bottom__body-btn btn" href="#">Написать нам</a>
+          </div>
+          <div class="header-bottom-swiper swiper">
+            <div class="header-bottom-swiper-wrapper swiper-wrapper">
+              <div class="header-bottom-swiper-slide swiper-slide header-bottom-swiper-slide--activing">
+                <div class="header-bottom-swiper-slide__box header-bottom-swiper-slide-box">
+                  <a class="header-bottom-swiper-slide-box__link" href="#">Мобильные приложения Мобильные игры</a>
+                </div>
+              </div>
+              <div class="header-bottom-swiper-slide swiper-slide">
+                <div class="header-bottom-swiper-slide__box header-bottom-swiper-slide-box">
+                  <a class="header-bottom-swiper-slide-box__link" href="#">Web Дизайн, Сайты</a>
+                </div>
+              </div>
+              <div class="header-bottom-swiper-slide swiper-slide">
+                <div class="header-bottom-swiper-slide__box header-bottom-swiper-slide-box">
+                  <a class="header-bottom-swiper-slide-box__link" href="#">Web Порталы</a>
+                </div>
+              </div>
+              <div class="header-bottom-swiper-slide swiper-slide">
+                <div class="header-bottom-swiper-slide__box header-bottom-swiper-slide-box">
+                  <a class="header-bottom-swiper-slide-box__link" href="#">Графические приложения, <br> игры, Аудио
+                    дизайн</a>
+                </div>
+              </div>
+              <div class="header-bottom-swiper-slide swiper-slide">
+                <div class="header-bottom-swiper-slide__box header-bottom-swiper-slide-box">
+                  <a class="header-bottom-swiper-slide-box__link" href="#">Аудио дизайн</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-swiper swiper">
+        <div class="header-swiper-wrapper swiper-wrapper">
+          <div class="header-swiper-slide swiper-slide">
+            <div class="header-swiper-slide__box header-swiper-slide-box">
+              <a href="#" class="header-swiper-slide-box__img">
+                <img class="header-swiper-slide-box__img-image" src="images/header-bottom-swiper-slide-img-1.png"
+                  alt="picture">
+                <p class="header-swiper-slide-box__img-text">Мобильные приложения
+                  Мобильные игры</p>
+              </a>
+            </div>
+          </div>
+          <div class="header-swiper-slide swiper-slide">
+            <div class="header-swiper-slide__box header-swiper-slide-box">
+              <a href="#" class="header-swiper-slide-box__img">
+                <img class="header-swiper-slide-box__img-image" src="images/header-bottom-swiper-slide-img-2.png"
+                  alt="picture">
+                <p class="header-swiper-slide-box__img-text">Web Дизайн, Сайты</p>
+              </a>
+            </div>
+          </div>
+          <div class="header-swiper-slide swiper-slide">
+            <div class="header-swiper-slide__box header-swiper-slide-box">
+              <a href="#" class="header-swiper-slide-box__img">
+                <img class="header-swiper-slide-box__img-image" src="images/header-bottom-swiper-slide-img-3.png"
+                  alt="picture">
+                <p class="header-swiper-slide-box__img-text">Web Порталы</p>
+              </a>
+            </div>
+          </div>
+          <div class="header-swiper-slide swiper-slide">
+            <div class="header-swiper-slide__box header-swiper-slide-box">
+              <a href="#" class="header-swiper-slide-box__img">
+                <img class="header-swiper-slide-box__img-image" src="images/header-bottom-swiper-slide-img-4.png"
+                  alt="picture">
+                <p class="header-swiper-slide-box__img-text">Графические приложения, игры, </p>
+              </a>
+            </div>
+          </div>
+          <div class="header-swiper-slide swiper-slide">
+            <div class="header-swiper-slide__box header-swiper-slide-box">
+              <a href="#" class="header-swiper-slide-box__img">
+                <img class="header-swiper-slide-box__img-image" src="images/header-bottom-swiper-slide-img-5.png"
+                  alt="picture">
+                <p class="header-swiper-slide-box__img-text">Аудио дизайн</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <main class="main">
+        <section class="main__projects projects">
+          <div class="container">
+            <h2 class="projects__title title">Более 100+ выполненных проектов</h2>
+            <div class="projects__wrapper">
+              <div class="projects__buttons">
+                <svg class="projects__buttons-burger" width="20" height="12" viewBox="0 0 20 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="15" height="2" rx="1" fill="#303032" />
+                  <rect x="18" width="2" height="2" rx="1" fill="#303032" />
+                  <rect y="5" width="15" height="2" rx="1" fill="#303032" />
+                  <rect x="18" y="5" width="2" height="2" rx="1" fill="#303032" />
+                  <rect y="10" width="15" height="2" rx="1" fill="#303032" />
+                  <rect x="18" y="10" width="2" height="2" rx="1" fill="#303032" />
+                </svg>
+                <button class="projects__buttons-btn" type="button" data-filter=".mobile">Мобильная разработка</button>
+                <button class="projects__buttons-btn" type="button" data-filter=".design">Web дизайн и сайты</button>
+                <button class="projects__buttons-btn" type="button" data-filter=".grafic">Графические
+                  приложение</button>
+                <button class="projects__buttons-btn" type="button" data-filter=".portal">Web-порталы</button>
+                <button class="projects__buttons-btn" type="button" data-filter=".audio">Аудио-дизайн</button>
+                <button class="projects__buttons-btn" type="button" data-filter=".audio">Аудио</button>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="projects__inner">
+              <div class="projects__item projects-item mix mobile">
+                <div class="projects-item-swiper swiper">
+                  <div class="projects-item-swiper-wrapper swiper-wrapper">
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="projects-item-swiper swiper">
+                  <div class="projects-item-swiper-wrapper swiper-wrapper">
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="projects__btn" type="button">Загрузить еще</button>
+              </div>
+              <div class="projects__item projects-item mix design">
+                <div class="projects-item-swiper swiper">
+                  <div class="projects-item-swiper-wrapper swiper-wrapper">
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="projects-item-swiper swiper">
+                  <div class="projects-item-swiper-wrapper swiper-wrapper">
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="projects__btn" type="button">Загрузить еще</button>
+              </div>
+              <div class="projects__item projects-item mix grafic">
+                <div class="projects-item-swiper swiper">
+                  <div class="projects-item-swiper-wrapper swiper-wrapper">
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="projects-item-swiper swiper">
+                  <div class="projects-item-swiper-wrapper swiper-wrapper">
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="projects__btn" type="button">Загрузить еще</button>
+              </div>
+              <div class="projects__item projects-item mix portal">
+                <div class="projects-item-swiper swiper">
+                  <div class="projects-item-swiper-wrapper swiper-wrapper">
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="projects-item-swiper swiper">
+                  <div class="projects-item-swiper-wrapper swiper-wrapper">
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="projects__btn" type="button">Загрузить еще</button>
+              </div>
+              <div class="projects__item projects-item mix audio">
+                <div class="projects-item-swiper swiper">
+                  <div class="projects-item-swiper-wrapper swiper-wrapper">
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="projects-item-swiper swiper">
+                  <div class="projects-item-swiper-wrapper swiper-wrapper">
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="projects-item-swiper-slide swiper-slide">
+                      <div class="projects-item-swiper-slide__box projects-item-swiper-slide-box">
+                        <a href="#" class="projects-item-swiper-slide-box__link">
+                          <img class="projects-item-swiper-slide-box__link-img"
+                            src="images/projects-item-swiper-slide-box-img.png" alt="picture">
+                          <div class="projects-item-swiper-slide-box__link-inner">
+                            <p class="projects-item-swiper-slide-box__link-inner-text">Название проекта</p>
+                            <p class="projects-item-swiper-slide-box__link-inner-text">https://www.название страницы</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="projects__btn" type="button">Загрузить еще</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__about about">
+          <div class="container">
+            <div class="about__inner">
+              <div class="about__company about-company">
+                <h2 class="about-company__title title">О компании</h2>
+                <p class="about-company__text">Совмещение разработки программного кода, графики и производства аудио
+                  контента на профессиональной студии звукозаписи позволяет нашей компании делать и обслуживать продукты
+                  под ключ. <br>
+                  Отладка программных продуктов выполняется только внутри нашей серверной базы без внешней помощи
+                  сервисов
+                  и утечки информации. <br>
+                  Специализируемся по таким средам: Microsoft .Net Core и Framework, Razor Pages и Angular, C++ Unreal
+                  Engine и C# Unity, Xamarin, 3ds Max и Blender и др.</p>
+                <div class="about-company__box about-company-box">
+                  <div class="about-company-box__item">
+                    <img class="about-company-box__item-img" src="images/about-company-box-item-img-1.png"
+                      alt="picture">
+                    <p class="about-company-box__text">Качество <br>
+                      Внимательны к деталям. <br>
+                      Четко следуем техническому заданию.</p>
+                  </div>
+                  <div class="about-company-box__item">
+                    <img class="about-company-box__item-img" src="images/about-company-box-item-img-2.png"
+                      alt="picture">
+                    <p class="about-company-box__text">Гарантии <br>
+                      Обратная связь и исправление ошибок после закрытия договора</p>
+                  </div>
+                  <div class="about-company-box__item">
+                    <img class="about-company-box__item-img" src="images/about-company-box-item-img-3.png"
+                      alt="picture">
+                    <p class="about-company-box__text">3D модели и анимация <br>
+                      Возможность создавать свою графику.</p>
+                  </div>
+                  <div class="about-company-box__item">
+                    <img class="about-company-box__item-img" src="images/about-company-box-item-img-4.png"
+                      alt="picture">
+                    <p class="about-company-box__text">Запись звука в студии <br>
+                      Аудио-дизайн поможет зазвучать проекту</p>
+                  </div>
+                </div>
+              </div>
+              <div class="about__body about-body">
+                <img class="about-body__img" src="images/about-company-body-img.png" alt="picture">
+                <img class="about-body__img" src="images/about-company-body-img-mobile.png" alt="picture">
+                <div class="about-body__box">
+                  <p class="about-body__box-title">Дмитриев Дмитрий Дмитриевич</p>
+                  <p class="about-body__box-subtext">Генеральный директор</p>
+                  <p class="about-body__box-text">“Хочу чтобы заказ и производство програмного обеспечения стало
+                    доступно
+                    любому. Как в булочную сходить”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__cervices cervices">
+          <div class="container">
+            <h2 class="cervices__title title">Услуги нашей компании</h2>
+            <div class="cervices__inner">
+              <div class="cervices__item cervices-item">
+                <div class="cervices-item__top">
+                  <h5 class="cervices-item__top-title">1. Мобильные приложения, Мобильные игр</h5>
+                  <p class="cervices-item__top-text">МИНАКОВпрог разрабатывает мобильные приложения под ключ по
+                    индивидуальному заказу. <br>
+                    Мобильное устройство - смартфон или планшет. <br>
+                    Поддерживаемые операционные системы - Android, iOS <br>
+                    Публикация приложения в Apple App Store, Google Play Market</p>
+                </div>
+                <div class="cervices-item__bottom cervices-item-bottom">
+                  <p class="cervices-item-bottom__title">Основные виды разрабатываемых приложений:</p>
+                  <ul class="cervices-item-bottom__list">
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">игры;</p>
+                    </li>
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">социальные сети;</p>
+                    </li>
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">независимые от internet приложения и базы данных;</p>
+                    </li>
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">AR или дополненная реальность;</p>
+                    </li>
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">управление устройствами, сбор и анализ данных с
+                        датчиков;
+                      </p>
+                    </li>
+                  </ul>
+                  <p class="cervices-item-bottom__title">Разработка отдельных модулей</p>
+                  <ul class="cervices-item-bottom__list">
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">чат</p>
+                    </li>
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">AR</p>
+                    </li>
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">взаимодействие с удалёнными серверами</p>
+                    </li>
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">специальные вычислительные модули</p>
+                    </li>
+                  </ul>
+                  <div class="cervices-item-bottom__button">
+                    <a class="cervices-item-bottom__button-btn" href="#">Заказать аналогичный проект</a>
+                  </div>
+                </div>
+              </div>
+              <div class="cervices__item cervices-item">
+                <div class="cervices-item__top">
+                  <h5 class="cervices-item__top-title">2. Разработка сайтов, Web-дизайн, Fullstack product management
+                  </h5>
+                  <p class="cervices-item__top-text">Сайт с запоминающимся дизайном, интересным функционалом -
+                    эффективный
+                    инструмент продаж. <br>
+                    В команде МИНАКОВпрог работают дизайнеры, программисты, готовые исполнить как простые, так и
+                    технически сложные виды работ</p>
+                </div>
+                <div class="cervices-item__bottom cervices-item-bottom animate__animated animate__fadeIn">
+                  <ul class="cervices-item-bottom__list">
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">Лэндинг страница;</p>
+                    </li>
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">Интернет-магазин;</p>
+                    </li>
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">Корпоративный сайт;</p>
+                    </li>
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">Сайт-портфолио и другие виды;</p>
+                    </li>
+                  </ul>
+                  <p class="cervices-item-bottom__title">Основные виды разрабатываемых приложений:</p>
+                  <ul class="cervices-item-bottom__list">
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">Параллакс-эффект;</p>
+                    </li>
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">3D-моделирование и другие опции;</p>
+                    </li>
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">Скролл (сайт-история);</p>
+                    </li>
+                  </ul>
+                  <p class="cervices-item-bottom__title">Возможно создать сайт под ключ с дальнейшим курированием,
+                    размещением на серверах МИНАКОВпрог.</p>
+                  <div class="cervices-item-bottom__button">
+                    <a class="cervices-item-bottom__button-btn" href="#">Заказать аналогичный проект</a>
+                  </div>
+                </div>
+              </div>
+              <div class="cervices__item cervices-item">
+                <div class="cervices-item__top">
+                  <h5 class="cervices-item__top-title">3. Графические приложения, Игры, Аудио-дизайн</h5>
+                  <p class="cervices-item__top-text">Компания способна создать сложный графический проект по
+                    индивидуальному заказу. Для разработки используются ведущие игровые движки для графической
+                    визуализации.</p>
+                </div>
+                <div class="cervices-item__bottom cervices-item-bottom animate__animated animate__fadeIn">
+                  <p class="cervices-item-bottom__text">Специалисты Минаковпрог разрабатывают проекты для VR-устройств.
+                    <br>
+                    <br>
+                    В штате компании есть специалисты по 3D моделированию, разработчики межплатформенных игр.
+                  </p>
+                  <div class="cervices-item-bottom__button">
+                    <a class="cervices-item-bottom__button-btn" href="#">Заказать аналогичный проект</a>
+                  </div>
+                </div>
+              </div>
+              <div class="cervices__item cervices-item">
+                <div class="cervices-item__top">
+                  <h5 class="cervices-item__top-title">4. WEB - Порталы</h5>
+                  <p class="cervices-item__top-text">Основное преимущество - удалённый доступ к системам ПО по сети или
+                    интернет.
+                  </p>
+                </div>
+                <div class="cervices-item__bottom cervices-item-bottom animate__animated animate__fadeIn">
+                  <p class="cervices-item-bottom__text">
+                    Для решения задач МИНАКОВпрог использует платформу .NET Core, базы данных MySql, языки
+                    программирования высокого уровня С#, C++, JavaScript. <br>
+                    Данная схема позволяет реализовать многопоточные сложные системы для управления, хранения и анализа
+                    данных. <br>
+                    Порталы на платформе .NET Core быстро работают, обрабатывают большие массивы запросов от
+                    пользователей.
+                    <br>
+                    <br>
+                    Преимущество .NET Core - интеграция графических интерфейсов Unity, Unreal, Flash, JQuery,
+                    Babylon.js,
+                    Tree.js.
+                    <br>
+                    <br>
+                    NET Core содержит все базовые инструменты для обеспечения защиты данных, позволяет разрабатывать
+                    свои
+                    системы безопасности.
+                    <br>
+                    <br>
+                    Наиболее частые задачи применения:
+                  </p>
+                  <ul class="cervices-item-bottom__list">
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">Учётные записи пользователей, соц. сети;</p>
+                    </li>
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">Сетевые игры;</p>
+                    </li>
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">Сбор и аналитика данных, поддержка всех видов API;</p>
+                    </li>
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">Чат и многое другое, где необходима логика;</p>
+                    </li>
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">Инструмент для обработки массива данных (фото, видео,
+                        измерений);</p>
+                    </li>
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">AR</p>
+                    </li>
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">УДалённое управление системами устройства или группой
+                        устройств (большими фермами);</p>
+                    </li>
+                    <li class="cervices-item-bottom__list-item">
+                      <p class="cervices-item-bottom__list-text">Реализация банковских операций, валютных систем и
+                        пулов,
+                        шифрование данных;</p>
+                    </li>
+                  </ul>
+                  <div class="cervices-item-bottom__button">
+                    <a class="cervices-item-bottom__button-btn" href="#">Заказать аналогичный проект</a>
+                  </div>
+                </div>
+              </div>
+              <div class="cervices__item cervices-item">
+                <div class="cervices-item__top">
+                  <h5 class="cervices-item__top-title">5. Аудио-дизайн</h5>
+                  <p class="cervices-item__top-text">​Звукорежиссер компании разрабатывает аудио-дизайн приложения.
+                    Сотрудничество ведется с профессиональными </p>
+                </div>
+                <div class="cervices-item__bottom cervices-item-bottom animate__animated animate__fadeIn">
+                  <p class="cervices-item-bottom__text">
+                    Специалисты Минаковпрог разрабатывают проекты для VR-устройств.
+                    <br>
+                    <br>
+                    В штате компании есть специалисты по 3D моделированию, разработчики межплатформенных игр.
+                    <br>
+                    <br>
+                    Звукорежиссер компании разрабатывает аудио-дизайн приложения. Сотрудничество ведется с
+                    профессиональными музыкантами, актерами озвучки. Все элементы аудио-дизайна записываются на
+                    профессиональной музыкальной студии.
+                  </p>
+                  <div class="cervices-item-bottom__button">
+                    <a class="cervices-item-bottom__button-btn" href="#">Заказать аналогичный проект</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__employees employees">
+          <div class="container">
+            <div class="employees__inner">
+              <div class="employees-swiper employees-swiper-top swiper">
+                <div class="employees-swiper-wrapper swiper-wrapper">
+                  <div class="employees-swiper-slide swiper-slide">
+                    <div class="employees-swiper-slide__box employees-swiper-slide-box">
+                      <div class="employees-swiper-slide-box__body">
+                        <h2 class="employees-swiper-slide-box__body-title">Наши сотрудники</h2>
+                        <p class="employees-swiper-slide-box__body-text">Краткое описание специолистов компании</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="employees-swiper-slide swiper-slide">
+                    <div class="employees-swiper-slide__box employees-swiper-slide-box">
+                      <img src="images/employees-swiper-slide-box-img-1.png" alt="picture"
+                        class="employees-swiper-slide-box__img">
+                      <p class="employees-swiper-slide-box__text">Генеральный директор</p>
+                      <p class="employees-swiper-slide-box__name">Дмитрий</p>
+                    </div>
+                  </div>
+                  <div class="employees-swiper-slide swiper-slide">
+                    <div class="employees-swiper-slide__box employees-swiper-slide-box">
+                      <img src="images/employees-swiper-slide-box-img-2.png" alt="picture"
+                        class="employees-swiper-slide-box__img">
+                      <p class="employees-swiper-slide-box__text">Заместитель генерального директора</p>
+                      <p class="employees-swiper-slide-box__name">Антон</p>
+                    </div>
+                  </div>
+                  <div class="employees-swiper-slide swiper-slide">
+                    <div class="employees-swiper-slide__box employees-swiper-slide-box">
+                      <img src="images/employees-swiper-slide-box-img-3.png" alt="picture"
+                        class="employees-swiper-slide-box__img">
+                      <p class="employees-swiper-slide-box__text">Технический директор</p>
+                      <p class="employees-swiper-slide-box__name">Андрей</p>
+                    </div>
+                  </div>
+                  <div class="employees-swiper-slide swiper-slide">
+                    <div class="employees-swiper-slide__box employees-swiper-slide-box">
+                      <img src="images/employees-swiper-slide-box-img-4.png" alt="picture"
+                        class="employees-swiper-slide-box__img">
+                      <p class="employees-swiper-slide-box__text">Гейм-дизайнер</p>
+                      <p class="employees-swiper-slide-box__name">Алексей</p>
+                    </div>
+                  </div>
+                  <div class="employees-swiper-slide swiper-slide">
+                    <div class="employees-swiper-slide__box employees-swiper-slide-box">
+                      <img src="images/employees-swiper-slide-box-img-5.png" alt="picture"
+                        class="employees-swiper-slide-box__img">
+                      <p class="employees-swiper-slide-box__text">Дизайнер</p>
+                      <p class="employees-swiper-slide-box__name">Ольга</p>
+                    </div>
+                  </div>
+                  <div class="employees-swiper-slide swiper-slide">
+                    <div class="employees-swiper-slide__box employees-swiper-slide-box">
+                      <img src="images/employees-swiper-slide-box-img-6.png" alt="picture"
+                        class="employees-swiper-slide-box__img">
+                      <p class="employees-swiper-slide-box__text">PR-менеджер</p>
+                      <p class="employees-swiper-slide-box__name">Оксана</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="employees-swiper-slide-box__body employees__title-box">
+                <h2 class="employees-swiper-slide-box__body-title">Наши сотрудники</h2>
+                <p class="employees-swiper-slide-box__body-text">Краткое описание специолистов компании</p>
+              </div>
+              <div class="employees-swiper employees-swiper-bottom swiper">
+                <div class="employees-swiper-wrapper swiper-wrapper">
+                  <div class="employees-swiper-slide swiper-slide">
+                    <div class="employees-swiper-slide__box employees-swiper-slide-box">
+                      <div class="employees-swiper-slide-box__body">
+                        <h2 class="employees-swiper-slide-box__body-title">Наши сотрудники</h2>
+                        <p class="employees-swiper-slide-box__body-text">Краткое описание специолистов компании</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="employees-swiper-slide swiper-slide">
+                    <div class="employees-swiper-slide__box employees-swiper-slide-box">
+                      <img src="images/employees-swiper-slide-box-img-1.png" alt="picture"
+                        class="employees-swiper-slide-box__img">
+                      <p class="employees-swiper-slide-box__text">Генеральный директор</p>
+                      <p class="employees-swiper-slide-box__name">Дмитрий</p>
+                    </div>
+                  </div>
+                  <div class="employees-swiper-slide swiper-slide">
+                    <div class="employees-swiper-slide__box employees-swiper-slide-box">
+                      <img src="images/employees-swiper-slide-box-img-2.png" alt="picture"
+                        class="employees-swiper-slide-box__img">
+                      <p class="employees-swiper-slide-box__text">Заместитель генерального директора</p>
+                      <p class="employees-swiper-slide-box__name">Антон</p>
+                    </div>
+                  </div>
+                  <div class="employees-swiper-slide swiper-slide">
+                    <div class="employees-swiper-slide__box employees-swiper-slide-box">
+                      <img src="images/employees-swiper-slide-box-img-3.png" alt="picture"
+                        class="employees-swiper-slide-box__img">
+                      <p class="employees-swiper-slide-box__text">Технический директор</p>
+                      <p class="employees-swiper-slide-box__name">Андрей</p>
+                    </div>
+                  </div>
+                  <div class="employees-swiper-slide swiper-slide">
+                    <div class="employees-swiper-slide__box employees-swiper-slide-box">
+                      <img src="images/employees-swiper-slide-box-img-4.png" alt="picture"
+                        class="employees-swiper-slide-box__img">
+                      <p class="employees-swiper-slide-box__text">Гейм-дизайнер</p>
+                      <p class="employees-swiper-slide-box__name">Алексей</p>
+                    </div>
+                  </div>
+                  <div class="employees-swiper-slide swiper-slide">
+                    <div class="employees-swiper-slide__box employees-swiper-slide-box">
+                      <img src="images/employees-swiper-slide-box-img-5.png" alt="picture"
+                        class="employees-swiper-slide-box__img">
+                      <p class="employees-swiper-slide-box__text">Дизайнер</p>
+                      <p class="employees-swiper-slide-box__name">Ольга</p>
+                    </div>
+                  </div>
+                  <div class="employees-swiper-slide swiper-slide">
+                    <div class="employees-swiper-slide__box employees-swiper-slide-box">
+                      <img src="images/employees-swiper-slide-box-img-6.png" alt="picture"
+                        class="employees-swiper-slide-box__img">
+                      <p class="employees-swiper-slide-box__text">PR-менеджер</p>
+                      <p class="employees-swiper-slide-box__name">Оксана</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__review review">
+          <div class="container">
+            <h2 class="review__title title">Инвестиционные проекты</h2>
+            <p class="review__subtitle">Наша компания занимается разработкой своих крупных проектов. Мы готовы
+              сотрудничать с инвесторами, если Вы хотите принимать участие в их развитии.</p>
+            <div class="review-swiper swiper">
+              <div class="review-swiper-wrapper swiper-wrapper">
+                <div class="review-swiper-slide swiper-slide">
+                  <div class="review-swiper-slide__box review-swiper-slide-box">
+                    <div class="review-swiper-slide-box__top">
+                      <h5 class="review-swiper-slide-box__top-title">ПРОИЗВОДСТВО МИКРОСХЕМ
+                        В КОСМИЧЕСКОМ ПРОСТРАНСТВЕ</h5>
+                      <p class="review-swiper-slide-box__top-text">Идея заключается в расположении выше геостационарной
+                        орбиты роботизированной станции с плазмотроном. Полностью автоматизированный завод по
+                        производству
+                        микросхем. Связка самолёта МРИЯ (АН-225) с МПК (многоразовый пилотируемый корабль) стартует с
+                        аэродрома. МПК отстыковывается и выходит на заданную орбиту. Происходит стыковка к станции и
+                        обмен
+                        материалом. Далее МПК доставляет груз самостоятельной посадкой на аэродром.
+                        Сейчас мы работаем над игрой-презентацией. </p>
+                    </div>
+                    <a class="review-swiper-slide-box__img" data-fancybox
+                      href="https://www.youtube.com/watch?v=9jJ3tff2qH4">
+                      <img class="review-swiper-slide-box__img-image" src="images/review-swiper-slide-box-top-img-1.png"
+                        alt="picture">
+                    </a>
+                  </div>
+                </div>
+                <div class="review-swiper-slide swiper-slide">
+                  <div class="review-swiper-slide__box review-swiper-slide-box">
+                    <div class="review-swiper-slide-box__top">
+                      <h5 class="review-swiper-slide-box__top-title">МЕССЕНДЖЕР KILK (КИЛЬКА)</h5>
+                      <p class="review-swiper-slide-box__top-text">Мы работаем над своим мессенджером. Он полностью
+                        интегрируем в любой портал. Поддерживает все функции аналогичных мессенджеров и будут добавлены
+                        свои. <br> Сейчас система прошла уже 3ю модернизацию. Скоро очередь за созданием мобильного
+                        приложения.
+                      </p>
+                    </div>
+                    <a class="review-swiper-slide-box__img" data-fancybox
+                      href="https://www.youtube.com/watch?v=VEf6XK1rrlo">
+                      <img class="review-swiper-slide-box__img-image" src="images/review-swiper-slide-box-top-img-2.png"
+                        alt="picture">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="review-swiper-prev swiper-button-prev">
+                <svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="8" r="1" fill="black" />
+                  <path
+                    d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+                    fill="black" />
+                </svg>
+              </div>
+              <div class="review-swiper-next swiper-button-next">
+                <svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="8" r="1" fill="black" />
+                  <path
+                    d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+                    fill="black" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top footer-top">
+            <div class="footer-top__body">
+              <h2 class="footer-top__body-title title">У вас остались вопросы? <br>
+                Оставь заявку и наши специалисты с тобой свяжутся</h2>
+              <a class="footer-top__body-link" href="tel:+79851004710">+7 (985) 100-47-10</a>
+              <a class="footer-top__body-link" href="mailto:info@minakovprog.ru">info@minakovprog.ru</a>
+              <a class="footer-top__body-link" href="#">Москва, Россия, 111033, Самокатная улица, 4Ас1 офис 208</a>
+              <a class="footer-top__body-link" href="#">Сергиев Посад, Россия, 141310, Валовая улица, дом 29, эт/пом/оф
+                цок/1/9</a>
+              <div class="user-nav__socials socials">
+                <a class="socials__link" href="#">
+                  <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.368236 9.13986L5.19624 10.9088L7.07833 16.8589C7.16016 17.261 7.65114 17.3414 7.97846 17.1002L10.6789 14.9292C10.9243 14.6879 11.3335 14.6879 11.6608 14.9292L16.4888 18.3867C16.8161 18.6279 17.3071 18.4671 17.3889 18.065L20.9895 1.17956C21.0713 0.777525 20.6622 0.375493 20.253 0.536307L0.368236 8.09457C-0.122745 8.25538 -0.122745 8.97904 0.368236 9.13986ZM6.83285 10.0243L16.3251 4.31544C16.4888 4.23503 16.6525 4.47625 16.4888 4.55666L8.71493 11.7129C8.46944 11.9541 8.22394 12.2757 8.22394 12.6778L7.97846 14.6075C7.97846 14.8488 7.56931 14.9292 7.48748 14.6075L6.5055 11.0696C6.26001 10.6676 6.42369 10.1851 6.83285 10.0243Z" />
+                  </svg>
+                </a>
+                <a class="socials__link" href="#">
+                  <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20.8049 11.2671C20.8049 11.1849 20.7214 11.1849 20.7214 11.1027C20.3872 10.4452 19.6352 9.62329 18.6325 8.71918C18.1312 8.30822 17.8805 7.97945 17.7134 7.81507C17.4628 7.4863 17.4628 7.23973 17.5463 6.91097C17.6299 6.66439 17.9641 6.25342 18.549 5.51369C18.8832 5.10274 19.0503 4.85617 19.301 4.60959C20.5543 2.96575 21.1391 1.89725 20.972 1.4041L20.8885 1.32192C20.8049 1.23973 20.7214 1.15754 20.5543 1.15754C20.3872 1.07535 20.1365 1.07535 19.8858 1.15754H16.7108C16.6272 1.15754 16.6272 1.15754 16.4601 1.15754C16.3766 1.15754 16.293 1.15754 16.293 1.15754H16.2095H16.1259L16.0424 1.23972C15.9588 1.32191 15.9588 1.32191 15.9588 1.4041C15.6246 2.30821 15.2068 3.04794 14.789 3.86986C14.5384 4.28082 14.2877 4.69178 14.0371 5.02055C13.7864 5.34932 13.6193 5.59589 13.4522 5.76027C13.2851 5.92466 13.118 6.00685 13.0344 6.17123C12.9509 6.25342 12.7838 6.33562 12.7838 6.25343C12.7002 6.25343 12.6166 6.25342 12.6166 6.17123C12.5331 6.08904 12.4495 6.00685 12.366 5.92465C12.2824 5.84246 12.2824 5.67808 12.1989 5.51369C12.1989 5.34931 12.1989 5.18493 12.1989 5.10274C12.1989 5.02054 12.1989 4.77398 12.1989 4.60959C12.1989 4.36302 12.1989 4.19863 12.1989 4.11644C12.1989 3.86986 12.1989 3.5411 12.1989 3.21233C12.1989 2.88357 12.1989 2.63698 12.1989 2.4726C12.1989 2.30822 12.1989 2.06164 12.1989 1.89726C12.1989 1.65068 12.1989 1.48629 12.1989 1.4041C12.1989 1.32191 12.1153 1.15753 12.1153 1.07534C12.0318 0.993148 11.9482 0.910954 11.8647 0.828762C11.7811 0.74657 11.614 0.746573 11.5304 0.664381C11.1127 0.582189 10.6114 0.5 10.0265 0.5C8.68962 0.5 7.77052 0.582194 7.43631 0.746578C7.2692 0.82877 7.10209 0.910957 7.01854 1.07534C6.85143 1.23972 6.85143 1.32192 6.93498 1.32192C7.35275 1.40411 7.68697 1.56849 7.85408 1.81506L7.93764 1.97946C8.02119 2.06165 8.02118 2.22602 8.10473 2.4726C8.18828 2.71917 8.18829 2.96575 8.18829 3.29452C8.18829 3.78767 8.18829 4.28082 8.18829 4.60959C8.18829 5.02055 8.10473 5.26712 8.10473 5.51369C8.10473 5.76027 8.02119 5.92466 7.93764 6.00685C7.85408 6.17123 7.85407 6.25343 7.77052 6.25343C7.77052 6.25343 7.77051 6.33561 7.68696 6.33561C7.60341 6.33561 7.51986 6.41781 7.35275 6.41781C7.2692 6.41781 7.10209 6.33562 7.01854 6.25343C6.85143 6.17124 6.68432 6.00685 6.60077 5.84247C6.43366 5.67809 6.26655 5.4315 6.09944 5.10274C5.93233 4.77397 5.68166 4.44521 5.51455 3.95205L5.34746 3.62329C5.26391 3.45891 5.0968 3.13014 4.92969 2.71918C4.76258 2.30822 4.59547 1.97946 4.42836 1.5685C4.34481 1.40411 4.26126 1.32191 4.17771 1.23972H4.09415C4.09415 1.23972 4.01059 1.15754 3.92703 1.15754C3.84348 1.15754 3.75994 1.07534 3.67638 1.07534H0.668434C0.334218 1.07534 0.167113 1.15753 0.083559 1.23972L0 1.32192C0 1.32192 0 1.40411 0 1.4863C0 1.56849 5.09848e-06 1.65068 0.083559 1.81506C0.501329 2.80136 1.00265 3.78767 1.50397 4.77397C2.0053 5.67808 2.50663 6.5 2.84084 7.07535C3.25861 7.65069 3.59282 8.22603 4.01059 8.71918C4.42836 9.21233 4.67902 9.5411 4.76257 9.70548C4.92968 9.86987 5.01323 9.95205 5.09678 10.0342L5.34746 10.2808C5.51457 10.4452 5.76522 10.6918 6.09944 10.9384C6.43366 11.1849 6.85142 11.4315 7.26919 11.6781C7.68696 11.9247 8.18829 12.0891 8.68962 12.2534C9.2745 12.4178 9.77581 12.5 10.2771 12.4178H11.5304C11.7811 12.4178 11.9482 12.3356 12.1153 12.1712L12.1989 12.089C12.1989 12.0068 12.2824 12.0069 12.2824 11.9247C12.2824 11.8425 12.2824 11.7603 12.2824 11.5959C12.2824 11.2671 12.2824 11.0206 12.366 10.774C12.4495 10.5274 12.4496 10.363 12.5331 10.1986C12.6167 10.0343 12.7002 9.95206 12.7838 9.86986C12.8673 9.78767 12.9509 9.70548 12.9509 9.70548H13.0344C13.2015 9.62329 13.4522 9.70548 13.6193 9.86986C13.87 10.0342 14.1206 10.2808 14.2877 10.5274C14.4548 10.774 14.7055 11.0206 15.0397 11.3493C15.3739 11.6781 15.6246 11.9247 15.7917 12.0069L16.0424 12.1712C16.2095 12.2534 16.3766 12.3356 16.6272 12.4178C16.8779 12.5 17.045 12.5 17.2121 12.5L20.053 12.4178C20.3036 12.4178 20.5543 12.3356 20.7214 12.2534C20.8885 12.1712 20.972 12.089 20.972 11.9247C20.972 11.8425 20.972 11.6781 20.972 11.5959C20.8049 11.4315 20.8049 11.3493 20.8049 11.2671Z" />
+                  </svg>
+                </a>
+                <a class="socials__link" href="#">
+                  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.4385 0H2.56154C1.10769 0 0 1.16923 0 2.70385V16.2962C0 17.8308 1.10769 19 2.56154 19H15.4385C16.8923 19 18 17.8308 18 16.2962V2.70385C18 1.16923 16.8923 0 15.4385 0ZM9 15.2C11.9769 15.2 14.4 12.7154 14.4 9.71923C14.4 9.20769 14.3308 8.62308 14.1923 8.18462H15.7154V15.9308C15.7154 16.2962 15.4385 16.6615 15.0231 16.6615H2.97693C2.63077 16.6615 2.28462 16.3692 2.28462 15.9308V8.11154H3.87693C3.73847 8.62308 3.66923 9.13462 3.66923 9.64615C3.6 12.7154 6.02308 15.2 9 15.2ZM9 13.0077C7.06154 13.0077 5.53846 11.4 5.53846 9.42692C5.53846 7.45385 7.06154 5.84615 9 5.84615C10.9385 5.84615 12.4615 7.45385 12.4615 9.42692C12.4615 11.4731 10.9385 13.0077 9 13.0077ZM15.6462 5.18846C15.6462 5.62692 15.3 5.99231 14.8846 5.99231H12.9462C12.5308 5.99231 12.1846 5.62692 12.1846 5.18846V3.21538C12.1846 2.77692 12.5308 2.41154 12.9462 2.41154H14.8846C15.3 2.41154 15.6462 2.77692 15.6462 3.21538V5.18846Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <form class="footer-top__form footer-top-form" action="#">
+              <p class="footer-top-form__text">Адрес электронной почты</p>
+              <input class="footer-top-form__input" type="email" placeholder="Например: mail@mail.ru">
+              <p class="footer-top-form__text">Какая услуга вас интересует?</p>
+              <div class="footer-top-form__select footer-top-form-select">
+                <div class="footer-top-form-select__top">
+                  <p class="footer-top-form-select__top-text">Выберите услугу</p>
+                </div>
+                <ul class="footer-top-form-select__list footer-top-form-select-list ">
+                  <li class="footer-top-form-select-list__item">
+                    <div class="footer-top-form-select-list__box">
+                      <p class="footer-top-form-select-list__box-text">Web-дизайн</p>
+                      <input class="footer-top-form-select-list__box-checkbox" type="checkbox">
+                    </div>
+                  </li>
+                  <li class="footer-top-form-select-list__item">
+                    <div class="footer-top-form-select-list__box">
+                      <p class="footer-top-form-select-list__box-text">Приложения</p>
+                      <input class="footer-top-form-select-list__box-checkbox" type="checkbox">
+                    </div>
+                  </li>
+                  <li class="footer-top-form-select-list__item">
+                    <div class="footer-top-form-select-list__box">
+                      <p class="footer-top-form-select-list__box-text">Аудио-дизайн</p>
+                      <input class="footer-top-form-select-list__box-checkbox" type="checkbox">
+                    </div>
+                  </li>
+                  <li class="footer-top-form-select-list__item">
+                    <div class="footer-top-form-select-list__box">
+                      <p class="footer-top-form-select-list__box-text">WEB - Порталы</p>
+                      <input class="footer-top-form-select-list__box-checkbox" type="checkbox">
+                    </div>
+                  </li>
+                  <li class="footer-top-form-select-list__item">
+                    <div class="footer-top-form-select-list__box">
+                      <p class="footer-top-form-select-list__box-text">Разработка сайтов</p>
+                      <input class="footer-top-form-select-list__box-checkbox" type="checkbox">
+                    </div>
+                  </li>
+                  <li class="footer-top-form-select-list__item">
+                    <div class="footer-top-form-select-list__box">
+                      <p class="footer-top-form-select-list__box-text">Fullstack product management</p>
+                      <input class="footer-top-form-select-list__box-checkbox" type="checkbox">
+                    </div>
+                  </li>
+                  <li class="footer-top-form-select-list__item">
+                    <div class="footer-top-form-select-list__box">
+                      <p class="footer-top-form-select-list__box-text">Игры</p>
+                      <input class="footer-top-form-select-list__box-checkbox" type="checkbox">
+                    </div>
+                  </li>
+                  <li class="footer-top-form-select-list__item">
+                    <div class="footer-top-form-select-list__box">
+                      <p class="footer-top-form-select-list__box-text">Графические приложения</p>
+                      <input class="footer-top-form-select-list__box-checkbox" type="checkbox">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <p class="footer-top-form__text">Краткое описание задачи</p>
+              <textarea class="footer-top-form__input" name="footer-form-textarea" id="footer-form-textarea" cols="5"
+                rows="5" placeholder="Напишите сюда...."></textarea>
+              <button class="footer-top-form__button" type="submit">Оставить сообщение</button>
+              <p class="footer-top-form__subtext">Нажимая кнопку вы даете свое согласие на обработку персональных
+                данныхи
+                соглашаетесь с политикой конфиденциальности</p>
+              <a class="footer-top-form__link" href="#">Политика обработки персональных данных</a>
+            </form>
+          </div>
+        </div>
+        <div class="footer__bottom footer-bottom">
+          <div class="container">
+            <div class="footer-bottom__inner">
+              <a class="logo" href="#">
+                <img class="logo-img" src="images/logo-bottom.svg" alt="logo">
+              </a>
+              <ul class="header-top__list">
+                <li class="header-top__list-item">
+                  <a class="header-top__list-link" href="#">Меню</a>
+                </li>
+                <li class="header-top__list-item">
+                  <a class="header-top__list-link" href="#">Наши проекы</a>
+                </li>
+                <li class="header-top__list-item">
+                  <a class="header-top__list-link" href="#">О проекте</a>
+                </li>
+                <li class="header-top__list-item">
+                  <a class="header-top__list-link" href="#">Услуги</a>
+                </li>
+                <li class="header-top__list-item">
+                  <a class="header-top__list-link" href="#">Сотрудники</a>
+                </li>
+                <li class="header-top__list-item">
+                  <a class="header-top__list-link" href="#">Проекты</a>
+                </li>
+                <li class="header-top__list-item">
+                  <a class="header-top__list-link" href="#">Контакты</a>
+                </li>
+              </ul>
+              <div class="user-nav">
+                <div class="user-nav__socials socials">
+                  <div class="socials__box">
+                    <p class="socials__box-text">Мы в социальных сетях</p>
+                  </div>
+                  <div class="socials__bottom">
+                    <a class="socials__link" href="#">
+                      <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0.368236 9.13986L5.19624 10.9088L7.07833 16.8589C7.16016 17.261 7.65114 17.3414 7.97846 17.1002L10.6789 14.9292C10.9243 14.6879 11.3335 14.6879 11.6608 14.9292L16.4888 18.3867C16.8161 18.6279 17.3071 18.4671 17.3889 18.065L20.9895 1.17956C21.0713 0.777525 20.6622 0.375493 20.253 0.536307L0.368236 8.09457C-0.122745 8.25538 -0.122745 8.97904 0.368236 9.13986ZM6.83285 10.0243L16.3251 4.31544C16.4888 4.23503 16.6525 4.47625 16.4888 4.55666L8.71493 11.7129C8.46944 11.9541 8.22394 12.2757 8.22394 12.6778L7.97846 14.6075C7.97846 14.8488 7.56931 14.9292 7.48748 14.6075L6.5055 11.0696C6.26001 10.6676 6.42369 10.1851 6.83285 10.0243Z" />
+                      </svg>
+                    </a>
+                    <a class="socials__link" href="#">
+                      <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M20.8049 11.2671C20.8049 11.1849 20.7214 11.1849 20.7214 11.1027C20.3872 10.4452 19.6352 9.62329 18.6325 8.71918C18.1312 8.30822 17.8805 7.97945 17.7134 7.81507C17.4628 7.4863 17.4628 7.23973 17.5463 6.91097C17.6299 6.66439 17.9641 6.25342 18.549 5.51369C18.8832 5.10274 19.0503 4.85617 19.301 4.60959C20.5543 2.96575 21.1391 1.89725 20.972 1.4041L20.8885 1.32192C20.8049 1.23973 20.7214 1.15754 20.5543 1.15754C20.3872 1.07535 20.1365 1.07535 19.8858 1.15754H16.7108C16.6272 1.15754 16.6272 1.15754 16.4601 1.15754C16.3766 1.15754 16.293 1.15754 16.293 1.15754H16.2095H16.1259L16.0424 1.23972C15.9588 1.32191 15.9588 1.32191 15.9588 1.4041C15.6246 2.30821 15.2068 3.04794 14.789 3.86986C14.5384 4.28082 14.2877 4.69178 14.0371 5.02055C13.7864 5.34932 13.6193 5.59589 13.4522 5.76027C13.2851 5.92466 13.118 6.00685 13.0344 6.17123C12.9509 6.25342 12.7838 6.33562 12.7838 6.25343C12.7002 6.25343 12.6166 6.25342 12.6166 6.17123C12.5331 6.08904 12.4495 6.00685 12.366 5.92465C12.2824 5.84246 12.2824 5.67808 12.1989 5.51369C12.1989 5.34931 12.1989 5.18493 12.1989 5.10274C12.1989 5.02054 12.1989 4.77398 12.1989 4.60959C12.1989 4.36302 12.1989 4.19863 12.1989 4.11644C12.1989 3.86986 12.1989 3.5411 12.1989 3.21233C12.1989 2.88357 12.1989 2.63698 12.1989 2.4726C12.1989 2.30822 12.1989 2.06164 12.1989 1.89726C12.1989 1.65068 12.1989 1.48629 12.1989 1.4041C12.1989 1.32191 12.1153 1.15753 12.1153 1.07534C12.0318 0.993148 11.9482 0.910954 11.8647 0.828762C11.7811 0.74657 11.614 0.746573 11.5304 0.664381C11.1127 0.582189 10.6114 0.5 10.0265 0.5C8.68962 0.5 7.77052 0.582194 7.43631 0.746578C7.2692 0.82877 7.10209 0.910957 7.01854 1.07534C6.85143 1.23972 6.85143 1.32192 6.93498 1.32192C7.35275 1.40411 7.68697 1.56849 7.85408 1.81506L7.93764 1.97946C8.02119 2.06165 8.02118 2.22602 8.10473 2.4726C8.18828 2.71917 8.18829 2.96575 8.18829 3.29452C8.18829 3.78767 8.18829 4.28082 8.18829 4.60959C8.18829 5.02055 8.10473 5.26712 8.10473 5.51369C8.10473 5.76027 8.02119 5.92466 7.93764 6.00685C7.85408 6.17123 7.85407 6.25343 7.77052 6.25343C7.77052 6.25343 7.77051 6.33561 7.68696 6.33561C7.60341 6.33561 7.51986 6.41781 7.35275 6.41781C7.2692 6.41781 7.10209 6.33562 7.01854 6.25343C6.85143 6.17124 6.68432 6.00685 6.60077 5.84247C6.43366 5.67809 6.26655 5.4315 6.09944 5.10274C5.93233 4.77397 5.68166 4.44521 5.51455 3.95205L5.34746 3.62329C5.26391 3.45891 5.0968 3.13014 4.92969 2.71918C4.76258 2.30822 4.59547 1.97946 4.42836 1.5685C4.34481 1.40411 4.26126 1.32191 4.17771 1.23972H4.09415C4.09415 1.23972 4.01059 1.15754 3.92703 1.15754C3.84348 1.15754 3.75994 1.07534 3.67638 1.07534H0.668434C0.334218 1.07534 0.167113 1.15753 0.083559 1.23972L0 1.32192C0 1.32192 0 1.40411 0 1.4863C0 1.56849 5.09848e-06 1.65068 0.083559 1.81506C0.501329 2.80136 1.00265 3.78767 1.50397 4.77397C2.0053 5.67808 2.50663 6.5 2.84084 7.07535C3.25861 7.65069 3.59282 8.22603 4.01059 8.71918C4.42836 9.21233 4.67902 9.5411 4.76257 9.70548C4.92968 9.86987 5.01323 9.95205 5.09678 10.0342L5.34746 10.2808C5.51457 10.4452 5.76522 10.6918 6.09944 10.9384C6.43366 11.1849 6.85142 11.4315 7.26919 11.6781C7.68696 11.9247 8.18829 12.0891 8.68962 12.2534C9.2745 12.4178 9.77581 12.5 10.2771 12.4178H11.5304C11.7811 12.4178 11.9482 12.3356 12.1153 12.1712L12.1989 12.089C12.1989 12.0068 12.2824 12.0069 12.2824 11.9247C12.2824 11.8425 12.2824 11.7603 12.2824 11.5959C12.2824 11.2671 12.2824 11.0206 12.366 10.774C12.4495 10.5274 12.4496 10.363 12.5331 10.1986C12.6167 10.0343 12.7002 9.95206 12.7838 9.86986C12.8673 9.78767 12.9509 9.70548 12.9509 9.70548H13.0344C13.2015 9.62329 13.4522 9.70548 13.6193 9.86986C13.87 10.0342 14.1206 10.2808 14.2877 10.5274C14.4548 10.774 14.7055 11.0206 15.0397 11.3493C15.3739 11.6781 15.6246 11.9247 15.7917 12.0069L16.0424 12.1712C16.2095 12.2534 16.3766 12.3356 16.6272 12.4178C16.8779 12.5 17.045 12.5 17.2121 12.5L20.053 12.4178C20.3036 12.4178 20.5543 12.3356 20.7214 12.2534C20.8885 12.1712 20.972 12.089 20.972 11.9247C20.972 11.8425 20.972 11.6781 20.972 11.5959C20.8049 11.4315 20.8049 11.3493 20.8049 11.2671Z" />
+                      </svg>
+                    </a>
+                    <a class="socials__link" href="#">
+                      <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M15.4385 0H2.56154C1.10769 0 0 1.16923 0 2.70385V16.2962C0 17.8308 1.10769 19 2.56154 19H15.4385C16.8923 19 18 17.8308 18 16.2962V2.70385C18 1.16923 16.8923 0 15.4385 0ZM9 15.2C11.9769 15.2 14.4 12.7154 14.4 9.71923C14.4 9.20769 14.3308 8.62308 14.1923 8.18462H15.7154V15.9308C15.7154 16.2962 15.4385 16.6615 15.0231 16.6615H2.97693C2.63077 16.6615 2.28462 16.3692 2.28462 15.9308V8.11154H3.87693C3.73847 8.62308 3.66923 9.13462 3.66923 9.64615C3.6 12.7154 6.02308 15.2 9 15.2ZM9 13.0077C7.06154 13.0077 5.53846 11.4 5.53846 9.42692C5.53846 7.45385 7.06154 5.84615 9 5.84615C10.9385 5.84615 12.4615 7.45385 12.4615 9.42692C12.4615 11.4731 10.9385 13.0077 9 13.0077ZM15.6462 5.18846C15.6462 5.62692 15.3 5.99231 14.8846 5.99231H12.9462C12.5308 5.99231 12.1846 5.62692 12.1846 5.18846V3.21538C12.1846 2.77692 12.5308 2.41154 12.9462 2.41154H14.8846C15.3 2.41154 15.6462 2.77692 15.6462 3.21538V5.18846Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="user-nav__box">
+                  <p class="user-nav__box-text">Ежедневно с 9:00 до 21:00</p>
+                  <a class="user-nav__box-phone" href="tel:+79288532323">+7 (928) 853-23-23</a>
+                </div>
+                <a class="user-nav__btn" href="#">Заказать звонок</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copy">
+          <div class="container">
+            <p class="footer__copy-text">© 2022 Все права защищены ООО "МИРКОДА"
+              ОГРН 1205000103120
+              ИНН 5042154932</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
